@@ -9,9 +9,10 @@ html, body, div {
 
 .grid-container {
     text-align: center;
-
+    display: grid;
     /* Phase 1 */
     /* Your code here */
+    grid-template-columns: 1fr 1fr 1fr;
 
     /* Bonus Phase */
     /* Your code here */
@@ -21,16 +22,24 @@ html, body, div {
 
     /* Phase 1 */
     /* Your code here */
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .item-2 {
     background-color: #e1f1dd; /* light sea green */
-
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
     /* Phase 1 */
     /* Your code here */
 }
 .item-3 {
     background-color: #cdc7be; /* grey */
-
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
     /* Phase 1 */
     /* Your code here */
 }
@@ -40,6 +49,10 @@ html, body, div {
 
     /* Phase 1 */
     /* Your code here */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 4;
 }
 
 .divider {
@@ -54,7 +67,10 @@ html, body, div {
 .grid-container-flow {
     border: solid #87a7b3 2px;
     margin: 20px;
-
+    display: grid;
+    grid-auto-flow: column;
     /* Phase 2 */
     /* Your code here */
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(3, 50px);
 }
